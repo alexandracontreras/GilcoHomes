@@ -1,11 +1,50 @@
 body {
-	background-color: #ffffff;
+	background: url("image2.png");
+	background-color: white;
+	height: 500px;
+	background-size: cover;
+	background-position: 0px 150px;
+	background-repeat: no-repeat;
 	}
-h1 {
+.navigation {
+	overflow: hidden;
+	background-color: white;
+}
+.header {
 	color: #000000;
-	font-family: font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
-	text-align: center;
-	font-weight: 800;
+	font-family: benton-sans, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 999 px;
 	position: relative;
 	top: 20px;
+	animation: type 4s steps(16);
+	overflow: hidden;
+	white-space: nowrap;
+	animation-iteration-count: infinite;
 	}
+	@keyframes type {
+		0% {
+			width:0ch;
+		}
+		50% {
+			width: 10ch;
+		}
+		100% {
+			width:40ch;
+		}
+	}
+a {
+	font-family: benton-sans, sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	float: right;
+	text-align: center;
+	padding: 50px 16px;
+	font-size: 17px;
+	color: black;
+}
+a:hover {
+	background-color: #FFF;
+	color: blue;
+}
